@@ -1,7 +1,7 @@
 class Person{
     private $name; // can be acccessed  outside the class
     private $email; // can be acccessed  outside the class
-    public static $ageLimit = 40;
+    private static $ageLimit = 40;
 
     // constructor
     function __construct($name, $email){
@@ -21,7 +21,12 @@ class Person{
 
 
     function getName(){
-        return $this->name. "<br>";
+        return $this->name. "<br>";;
+    }
+
+    public static function getAgeLimit(){
+        return self::ageLimit;
+
     }
 }
 
@@ -46,7 +51,10 @@ class Customer extends Person(){
 <!-- customer1 = new Custoomer("Ernest Kato", "test@gmail.com", 3000);
 echo customer1->getBalance(); -->
 
-Person::$ageLimit;
+
+//static props and methods
+<!-- Person::$ageLimit; -->
+Person::$setAgeLimit();
 
 <!-- person1 = new Person("ernest kato", "test@gmail.com"); -->
 <!-- person1->setName("Ernest Kato"); -->
