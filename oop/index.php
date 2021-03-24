@@ -52,9 +52,9 @@ class Customer extends Person(){
 echo customer1->getBalance(); -->
 
 
-//static props and methods
+// static props and methods
 <!-- Person::$ageLimit; -->
-Person::$setAgeLimit();
+<!-- Person::$setAgeLimit(); -->
 
 <!-- person1 = new Person("ernest kato", "test@gmail.com"); -->
 <!-- person1->setName("Ernest Kato"); -->
